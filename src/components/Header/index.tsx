@@ -59,7 +59,7 @@ export const Header = () => {
             <NextLink href="/" passHref>
               <Link className="center flex gap-2">
                 <span>👽</span>
-                <span className="text-xl">ilyxium</span>
+                <span className="text-xl">Optimeme</span>
               </Link>
             </NextLink>
           </Box>
@@ -123,11 +123,11 @@ export const Header = () => {
               marginBottom="3rem"
               fontSize={[20, 20, 20]}
             >
-              
+
               <NextLink href="/">
                 <Link className="center flex gap-2">
-                  <span>👽</span>
-                  <span className="text-xl">ilyxium</span>
+                  <span></span>
+                  <span className="text-xl">Optimeme</span>
                 </Link>
               </NextLink>
 
@@ -171,7 +171,7 @@ export const Header = () => {
               position="absolute"
             >
               {/* Twitter Link - URL SHOULD BE UPDATED */}
-              <SocialIcon bgColor="white" url="https://twitter.com/ilyxium" target="_blank" />
+              <SocialIcon bgColor="white" url="" target="_blank" />
 
             </Flex>
           </DrawerBody>

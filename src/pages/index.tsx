@@ -18,48 +18,67 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>DApp Boilerplate</title>
-        <meta name="description" content="ETH + Next.js DApp Boilerplate by ilyxium" />
+        <title>Optimeme</title>
+        <meta name="description" content="ETH + Next.js DApp Boilerplate" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h2 className={styles.title}>
-          Welcome
+          Welcome to Optimeme
         </h2>
 
         <div className={styles.grid}>
-          <Link href='https://twitter.com/yanniksood' isExternal>
+          <Link href='' isExternal>
             <Button
-              backgroundColor="#BB86FC"
+              backgroundColor="#9c44dc"
               borderRadius="25px"
               margin={2.5}
               _hover={{
-                bg: '#121212'
+                bg: '#E4007C'
               }}
               _active={{
-                bg: '#121212'
+                bg: '#E4007C'
               }}
             >
-              <p>Follow me on twitter</p>
+              <p>Upload</p>
             </Button>
           </Link>
-          
 
+
+
+        </div>
+        <div>
           <Button
-              backgroundColor="#32CD32"
-              borderRadius="25px"
-              margin={2.5}
-              _hover={{
-                bg: '#121212'
-              }}
-              _active={{
-                bg: '#121212'
-              }}
-              onClick={() => sendTransaction()}
-            >
-              <p>Donate some ETH</p>
-            </Button>
+            backgroundColor="#32CD32"
+            borderRadius="25px"
+            margin={2.5}
+            _hover={{
+              bg: '#E4007C'
+            }}
+            _active={{
+              bg: '#E4007C'
+            }}
+            onClick={() => sendTransaction()}
+          >
+            <p>Custom Url</p>
+          </Button>
+        </div>
+        <div>
+          <Button
+            backgroundColor="#32CD32"
+            borderRadius="25px"
+            margin={2.5}
+            _hover={{
+              bg: '#E4007C'
+            }}
+            _active={{
+              bg: '#E4007C'
+            }}
+            onClick={() => sendTransaction()}
+          >
+            <p>Go !</p>
+          </Button>
         </div>
       </main>
     </div>
