@@ -34,7 +34,7 @@ export const Header = () => {
       href: '/'
     },
     {
-      text: 'About',
+      text: 'About you donation',
       href: '/about',
       icon: <InformationCircleIcon className="h-6 w-6" />
     },
@@ -127,7 +127,7 @@ export const Header = () => {
               <NextLink href="/">
                 <Link className="center flex gap-2">
                   <span></span>
-                  <span className="text-xl">Optimeme</span>
+                  <span className="text-xl">Bet to Good with safety </span>
                 </Link>
               </NextLink>
 

@@ -1,4 +1,5 @@
 #  Bet For Good With Safety
+Is based on boilerplate
 
 - Only open source libraries used!
 - Easy Setup [3 lines!]

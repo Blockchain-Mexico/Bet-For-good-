@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import { useSendTransaction } from 'wagmi'
 import { BigNumber } from '@ethersproject/bignumber'
 import AnimatedText from 'react-animated-text-content';
+import { AwesomeButtonProgress } from "react-awesome-button";
 
 const Home: NextPage = () => {
 
@@ -66,6 +67,7 @@ const Home: NextPage = () => {
           >
             With Safety
           </AnimatedText>
+
         </h2>
 
         <div className={styles.grid}>

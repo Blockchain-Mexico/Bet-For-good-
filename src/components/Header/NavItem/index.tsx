@@ -39,7 +39,7 @@ export const NavDrawerItem: FC<LinkProps & { onClick: () => void }> = ({
         py={2}
         px={2}
         _hover={{
-          backgroundColor: 'rgba(255, 255, 255, 0.2)'
+          backgroundColor: '#E4007C'
         }}
         style={{ borderRadius: 25 }}
         fontWeight={600}
