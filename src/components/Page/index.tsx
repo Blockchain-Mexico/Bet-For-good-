@@ -19,7 +19,7 @@ export const Page: FC = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Optimeme</title>
+        <title>Bet For Good</title>
         <meta name="description" content="Ethereum + Next.js DApp Boilerplate" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -4,9 +4,11 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useSendTransaction } from 'wagmi'
 import { BigNumber } from '@ethersproject/bignumber'
+import AnimatedText from 'react-animated-text-content';
 
 const Home: NextPage = () => {
 
+  //TODO: Adapt to the Backend is Next Project the send tx is = ? the string
   const { data, isIdle, isError, isLoading, isSuccess, sendTransaction } =
     useSendTransaction({
       request: {
@@ -18,14 +20,52 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Optimeme</title>
+        <title> Bet for Good </title>
         <meta name="description" content="ETH + Next.js DApp Boilerplate" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h2 className={styles.title}>
-          Welcome to Optimeme
+          Welcome to
+          <AnimatedText
+            type="words" // animate words or chars
+            animation={{
+              x: '200px',
+              y: '-20px',
+              scale: 1.1,
+              ease: 'ease-in-out',
+            }}
+            animationType="lights"
+            interval={0.00006}
+            duration={5.85}
+            tag="p"
+            className="animated-paragraph"
+            includeWhiteSpaces
+            threshold={0.1}
+            rootMargin="20%"
+          >
+            Bet For Good
+          </AnimatedText>
+          <AnimatedText
+            type="words" // animate words or chars
+            animation={{
+              x: '200px',
+              y: '-20px',
+              scale: 1.1,
+              ease: 'ease-in-out',
+            }}
+            animationType="rifle"
+            interval={0.0006}
+            duration={1.25}
+            tag="p"
+            className="animated-paragraph"
+            includeWhiteSpaces
+            threshold={0.1}
+            rootMargin="20%"
+          >
+            With Safety
+          </AnimatedText>
         </h2>
 
         <div className={styles.grid}>
@@ -41,7 +81,7 @@ const Home: NextPage = () => {
                 bg: '#E4007C'
               }}
             >
-              <p>Upload</p>
+              <p>Bet </p>
             </Button>
           </Link>
 
@@ -50,8 +90,8 @@ const Home: NextPage = () => {
         </div>
         <div>
           <Button
-            backgroundColor="#32CD32"
-            borderRadius="25px"
+            backgroundColor="#F3BA2F"
+            borderRadius="30px"
             margin={2.5}
             _hover={{
               bg: '#E4007C'
@@ -61,7 +101,7 @@ const Home: NextPage = () => {
             }}
             onClick={() => sendTransaction()}
           >
-            <p>Custom Url</p>
+            <p> Donate </p>
           </Button>
         </div>
         <div>
@@ -77,7 +117,7 @@ const Home: NextPage = () => {
             }}
             onClick={() => sendTransaction()}
           >
-            <p>Go !</p>
+            <p> Go !</p>
           </Button>
         </div>
       </main>

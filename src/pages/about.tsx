@@ -22,10 +22,13 @@ const About: NextPage = () => {
         gap="3rem"
       >
           <Heading>
-              About Page
+              About Bet for Good
           </Heading>
 
           <Text>
+
+            Good for bet
+            Bet with heart.
               With this boilerplate, you get a 👉mobile friendly👈 DApp, a few example pages, a scalable header,
               the wallet connection + one example transaction done for you🤌.
           </Text>

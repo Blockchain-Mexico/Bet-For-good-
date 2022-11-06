@@ -30,16 +30,16 @@ export const Header = () => {
 
   const navItems = [
     {
-      text: 'home',
+      text: 'Home',
       href: '/'
     },
     {
-      text: 'about',
+      text: 'About',
       href: '/about',
       icon: <InformationCircleIcon className="h-6 w-6" />
     },
     {
-      text: '404 page',
+      text: '404',
       href: '/error',
       icon: <InformationCircleIcon className="h-6 w-6" />
     }
@@ -58,8 +58,8 @@ export const Header = () => {
           <Box fontWeight="bold" fontSize={[20, 20, 20]}>
             <NextLink href="/" passHref>
               <Link className="center flex gap-2">
-                <span>👽</span>
-                <span className="text-xl">Optimeme</span>
+                <span> ❤️ </span>
+                <span className="text-xl"> Bet For Good </span>
               </Link>
             </NextLink>
           </Box>
